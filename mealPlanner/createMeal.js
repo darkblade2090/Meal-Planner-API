@@ -36,6 +36,7 @@ var newMeal= function(data) {
             
                     }
             }
+            //console.log(items)
             while(itemList.length>5)
                 itemList.pop();
              var i=0;

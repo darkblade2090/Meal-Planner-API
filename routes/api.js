@@ -43,23 +43,24 @@ router.post('/user', function(req,res,next){
         res.status(400).send("Enter All details");
     }
     else{
-        console.log(req.body)
-    userModel.create(req.body)       
+        //console.log(req.body)
+     userModel.create(req.body)      
     .then(function(user){
-        
+       
     //Creating user meal    
     var itemList=[];
     //JSON.parse(calorieModel.find())
     calorieModel.find()
     .then(function(item){
+        
         itemList=item;
     }).then(function(){
-       
+        
         var data={
             user:user,
             food:itemList
         }
-        //console.log(itemList);
+        
         //res.send(data);
         var meal=createMeal.newMeal(data);
         //console.log(meal);
@@ -97,7 +98,7 @@ router.patch('/update/:id/:cal',function(req,res,next){
             .then(function(item){
                 itemList=item;
             }).then(function(){
-            
+                
             //Updating calories
             user.calorieRequirement=cal;
 
