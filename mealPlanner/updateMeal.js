@@ -61,6 +61,7 @@ var newmealUpdate= function(data) {
         var mealData = {
             _id: data.user._id,
             name: data.user.name,
+            date: data.user.updatedAt,
             catagory : catagory,
             foodItems : itemList
         }

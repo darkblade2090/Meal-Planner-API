@@ -12,12 +12,12 @@ const userSchema = new mongoose.Schema({
 },
 "mealPlan": 
    {
-    "date" : {
-     type: Date,
-      required: true
-   },
-   "mealReference" : {
-    type: [],
+      "date" : {
+      type: Date,
+        
+    },
+    "mealReference" : {
+      type: String,
     
    }
    
