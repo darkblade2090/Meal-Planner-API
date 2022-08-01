@@ -1,0 +1,65 @@
+# Evolv-Backend
+Evolv Backend challenge
+
+Technologies Used: Node.js, Express.js, MongoDb
+
+Welcome to Meal Planning API -"YASH KUMAR"
+
+It implements following commands:
+
+1. Post API to add data to of food.
+2. Post request to add user and it automatically plan your meal based on user data.
+3. Patch request to update you already planned meal based on user id.
+4. Post request to see your current meal requires your user id.
+
+
+NOTE: Use Postman to to send requests.
+___________________________________________________________________________________________
+
+1. Add food with following syntax:
+
+      Route : /food
+
+      Syntax to add data:
+
+      {   "name" : "",
+          "calories" : "",
+          "protien" : "",
+          "crab" : "",
+          "fat" : "",
+          "acceptedUnits" : "",                  //array of enum of 'ml', 'liter', 'kg', 'gram', 'piece', 'ounce', 'cup'
+          "itemWeight" : ""
+      }
+
+
+2. Add user and it will automatically plan your meal
+
+      Route : /user
+
+      Syntax to add data:
+
+      {
+        "name" : "",
+        "calorieRequirement" : "",
+        "mealPan" : {
+          "date" : "";
+          "mealReference : ""
+        }
+      }
+
+
+3. To update your meal by sending your user id and new calorie data.
+
+    Route : /update/:id/:cal
+
+
+
+4. To fetch your current meal data by sending your user id
+
+      Route : /meal
+
+      Syntax to get data:
+
+      {
+        "id" : ""
+      }
