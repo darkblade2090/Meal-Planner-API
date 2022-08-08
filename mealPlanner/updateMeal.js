@@ -2,7 +2,7 @@ const mealModel=require('../database/models/meal');
 const foodItems=require('../database/models/calorieChart');
 
 /**
- * @param {*} data
+ * @param {*} data-food List and current user data
  * */
 
 var newmealUpdate= function(data) {

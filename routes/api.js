@@ -43,7 +43,7 @@ router.post('/user', function(req,res,next){
         res.status(400).send("Enter All details");
     }
     else{
-        //console.log(req.body)
+        
      userModel.create(req.body)      
     .then(function(user){
        

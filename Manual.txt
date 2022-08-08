@@ -36,7 +36,7 @@ Syntax to add data:
 {
 	"name" : "",
 	"calorieRequirement" : "",
-	"mealPan" : {
+	"mealPlan" : {
 		"date" : "";
 		"mealReference : ""
 	}

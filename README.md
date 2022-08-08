@@ -1,5 +1,5 @@
-# Evolv-Backend
-Evolv Backend challenge
+# Daily Meal planner API
+
 
 Technologies Used: Node.js, Express.js, MongoDb
 

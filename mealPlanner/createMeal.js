@@ -2,7 +2,7 @@
 
 
 /**
- * @param {*} data
+ * @param {*} data-food List and current user data
  * */
 
 var newMeal= function(data) {
@@ -21,7 +21,7 @@ var newMeal= function(data) {
             for(var i=0; i<items.length&&numberItems; i++)
             {   
                
-                var currentCalorie=items[i].itemWeight*items[i].calories/100;
+                var currentCalorie=items[i].itemWeight*items[i].calories/100; 
                 //console.log(currentCalorie);
 
                 //Otpimizing protien and calories
@@ -31,7 +31,7 @@ var newMeal= function(data) {
                        
                         numberItems--;
                         calorie-=items[i].calories;
-                        if(calorie<=0) continue;
+                        if(calorie<=0||!numberItems) break;
                         maxCarlorie=calorie/numberItems;
             
                     }

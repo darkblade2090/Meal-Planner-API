@@ -1,25 +1,20 @@
 const mongoose=require('mongoose');
 
 
+
 const userSchema = new mongoose.Schema({
-"name": {
+name: {
   type: String,
   required: true,
 },
-"calorieRequirement": {
+calorieRequirement: {
   type: Number,
   required: true,
 },
-"mealPlan": 
+mealPlan : 
    {
-      "date" : {
-      type: Date,
-        
-    },
-    "mealReference" : {
-      type: String,
-    
-   }
+    date : Date,
+    mealReference : String
    
 }
 
